@@ -27,3 +27,7 @@ def db():
 def burger():
     yield Burger()
 
+
+@pytest.fixture
+def two_indegrients():
+    yield Ingredient("Тип", "Имя", 100), Ingredient("Тип", "Имя", 100)
